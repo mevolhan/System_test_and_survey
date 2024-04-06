@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4f5e82-a442-44c1-aff6-129d9fafae33" name="Changes" comment="" />
+    <list default="true" id="db4f5e82-a442-44c1-aff6-129d9fafae33" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/create_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,12 +39,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Иван/PycharmProjects/System_test_and_survey&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Иван/PycharmProjects/System_test_and_survey",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="System_test_and_survey" />
