@@ -1,0 +1,30 @@
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background: #565656
+}
+
+.cont__main__btn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    row-gap: 2rem;
+
+
+}
+
+.main__block__btn{
+    display: flex;
+    flex-direction: row;
+    flex:2;
+}
+
+.btn__main{
+    --bs-btn-border-width: 0.2rem;
+}
