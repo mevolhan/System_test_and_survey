@@ -1,7 +1,7 @@
 body {
     background-color: #ffffff;
 }
-
+ 
 .header {
     display: flex;
     width: 100%;
@@ -27,4 +27,5 @@ body {
 
 .btn__main{
     --bs-btn-border-width: 0.2rem;
+    width: 100%;
 }
