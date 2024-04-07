@@ -6,7 +6,7 @@ import pymysql
 class MyDB():
     def __init__(self, host='localhost', port=3036, user='user', password='mypassword', dbname='mydb'):
         self.host = host
-        self.port = port
+        self.port = int(port)
         self.user = user
         self.password = password
         self.dbname = dbname
@@ -32,6 +32,7 @@ port_bd = os.getenv('port')
 user_bd = os.getenv('user')
 password_bd = os.getenv('password')
 dbname_bd = os.getenv('dbname')
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -53,5 +54,5 @@ def questions_test_create():
     return 'work'
 
 if __name__ == '__main__':
-    my_bd = MyDB(host=host_bd, port=int(port_bd), user=user_bd, password=password_bd, dbname=dbname_bd)
+    my_bd = MyDB(host=host_bd, port=port_bd, user=user_bd, password=password_bd, dbname=dbname_bd)
     app.run(debug=True)
