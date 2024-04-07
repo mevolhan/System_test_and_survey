@@ -91,7 +91,7 @@ form{
 }
 
 .input__description__create{
-    height: 9rem !important;
+    height: 11rem !important;
     font-size: 1.3rem;
 }
 
@@ -109,6 +109,7 @@ form{
 }
 
 .btn__create{
+    margin: 6rem !important;
     width: 30%;
     height: 3rem;
 }
