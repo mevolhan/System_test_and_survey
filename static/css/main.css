@@ -2,6 +2,33 @@ body {
     background-color: #ffffff;
 }
 
+input[type="text"] {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background: #ffffff !important;
+    padding: 1rem;
+}
+
+input[type="text"]:focus {
+  background: #e1e1e1 !important;
+}
+
+textarea {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background: #ffffff !important;
+    padding: 1rem;
+    width: 100%;
+}
+
+textarea:focus {
+  background: #e1e1e1 !important;
+}
+
+form{
+    width: 100%;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -28,4 +55,60 @@ body {
 .btn__main{
     --bs-btn-border-width: 0.2rem;
     width: 100%;
+}
+
+.title__create{
+    font-size: 3.5rem;
+}
+
+.cont__title__create{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.input__title__create{
+    height: 4rem !important;
+    width: 100% !important;
+    font-size: 1.8rem !important;
+}
+
+.cont__input__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create_form__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    row-gap: 2rem;
+}
+
+.input__description__create{
+    height: 9rem !important;
+    font-size: 1.3rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #868686;
+    --bs-btn-border-color: #313131;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #3d3d3d;
+    --bs-btn-hover-border-color: #313131;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e1e1e1;
+    --bs-btn-active-border-color: #e1e1e1;
+
+}
+
+.btn__create{
+    width: 30%;
+    height: 3rem;
 }
