@@ -10,6 +10,9 @@ class MyDB():
         self.password = os.getenv('password')
         self.dbname = os.getenv('dbname')
 
+    def connect_myBD(self):
+        pass
+
 load_dotenv()
 app = Flask(__name__)
 
