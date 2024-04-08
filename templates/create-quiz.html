@@ -11,10 +11,11 @@
 </div>
 <div class="cont__input__title">
     <form action="create-test" method="post" class="create_form__title">
-        <input type="text" class="input__title__create" id="input__title__create__test" name="input__title__create__test" autofocus="" placeholder="Название теста" required="">
-        <textarea class="input__description__create" id="input__description__create__test" name="input__description__create__test" placeholder="Описание теста"></textarea>
+        <input type="text" class="input__title__create" id="input__title__create__quiz" name="input__title__create__quiz" autofocus="" placeholder="Название теста" required="">
+        <textarea class="input__description__create" id="input__description__create__quiz" name="input__description__create__quiz" placeholder="Описание теста"></textarea>
         <input type="submit" class="btn btn-primary btn__create" value="Далее">
     </form>
+    {% block dialog %} {% endblock %}
 </div>
 
 {% endblock %}
