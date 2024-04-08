@@ -11,7 +11,11 @@
     <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="cont_right_header">
+            <a href="/"><button class="btn btn-outline-secondary btn__header__main" type="button">Главная</button></a>
+        </div>
+    </header>
     {% block body %} {% endblock %}
 </body>
 </html>

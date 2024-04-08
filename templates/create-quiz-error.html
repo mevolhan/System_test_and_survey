@@ -1,0 +1,10 @@
+{% extends 'create-test.html' %}
+
+{% block dialog %}
+<dialog open>
+  <h2 class="dialog-title">
+    Заметка с таким названеим уже есть!
+  </h2>
+  <a href="/create-test"><button class="btn btn-primary btn__create">Ок!</button></a>
+</dialog>
+{% endblock %}
