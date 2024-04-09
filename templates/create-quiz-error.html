@@ -1,10 +1,10 @@
-{% extends 'create-test.html' %}
+{% extends 'create-quiz.html' %}
 
 {% block dialog %}
 <dialog open>
   <h2 class="dialog-title">
-    Заметка с таким названеим уже есть!
+    Викторина с таким названеим уже есть!
   </h2>
-  <a href="/create-test"><button class="btn btn-primary btn__create">Ок!</button></a>
+  <a href="/create-test"><button class="btn btn-primary btn__create btn__dialog">Ок!</button></a>
 </dialog>
 {% endblock %}

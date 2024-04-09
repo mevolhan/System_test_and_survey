@@ -16,18 +16,21 @@ def create_test():
         description_test = request.form['input__description__create__quiz']
         #session["curent_test"] = 1
         isTitleInBD = my_bd.save_title_quiz(title_test, description_test, 'test')
-        #print(title_test, description_test)
+        print(request.form.to_dict())
         if isTitleInBD:
-            return redirect('/create-quiz/questions')
+            return redirect(url_for('questions_test_create', title_test=title_test, id=1))
         else:
             return render_template('create-quiz-error.html')
 
     else:
-        return render_template('create-quiz.html', type='test')
+        return render_template('create-quiz.html', type='теста')
 
-@app.route('/create-test/questions', methods=['POST', 'GET'])
-def questions_test_create():
-    return 'work'
+@app.route('/create-test/questions<title_test>/<int:id>', methods=['POST', 'GET'])
+def questions_test_create(title_test, id):
+    if request.method == "POST":
+        pass
+    else:
+        return render_template('questions-test.html', title_test=title_test, id=id)
 
 if __name__ == '__main__':
     host_bd, port_bd, user_bd, password_bd, dbname_bd = laad_dotenv_first_power()
