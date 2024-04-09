@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+
+{% block title %}
+Создание вопросов
+{% endblock %}
+
+
+{% block body %}
+<div class="cont__title__create">
+    <div class="cont__title__answer">
+        <h1 class="title__create">Тест "{{title_test}}"</h1>
+        <h2 class="title__create">Вопрос {{id}}</h2>
+    </div>
+</div>
+<div class="cont__for__questions">
+    <form method="post" class="form__question">
+        <div class="fist_line">
+            <textarea name="question" id="question" class="input__name__question" placeholder="Вопрос {{id}}"></textarea>
+            <div class="element__radio__for__form">
+                <div class="cont__radio">
+                    <input type="radio" class="form__radio_btn" name="is_closed_question" id="closed_question" value="closed_question" checked>
+                    <label for="closed_question">Закрытый&nbspвопрос</label>
+                    <input type="radio" class="form__radio_btn" name="is_closed_question" id="open_question" value="open_question">
+                    <label for="open_question">Открытый&nbspвопрос</label>
+                </div>
+                <div class="cont__radio" id="two_group_radio">
+                    <input type="radio" class="form__radio_btn" name="is_one_list" id="one_list" value="one_list" checked>
+                    <label for="one_list">Один&nbspправельный</label>
+                    <input type="radio" class="form__radio_btn" name="is_one_list" id="any_list" value="any_list">
+                    <label for="one_list">Несколько&nbspправельных</label>
+                </div>
+            </div>
+        </div>
+        <div class="block__answers">
+            <p id="answers_any">Отметьте паравельные варианты ответов</p>
+            <div class="cont__for__answers">
+
+            </div>
+            <div class="for__answer__plus__btn">
+
+                <div class="btn btn__plus" id="plus_answer"><img src="/static/src/plus.png" alt="Добавить вопрос"></div>
+                <label for="plus_answer">Добавить вариант ответа</label>
+            </div>
+        </div>
+        <div class="block__one__answer hidden">
+            <input type="text" id="one_answer" name="right_answer" placeholder="Введите правельный ответ" class="input__title__create">
+        </div>
+        <input type="submit" name="{{ id }}" class="btn btn-primary btn__create" value="Следующий вопрос">
+    </form>
+</div>
+
+<script src="/static/js/control_question_template.js"></script>
+{% endblock %}

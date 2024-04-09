@@ -29,6 +29,22 @@ form{
     width: 100%;
 }
 
+dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: auto;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0 !important;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -69,6 +85,19 @@ form{
     justify-content: center;
     padding: 3rem;
 }
+
+.cont__title__create .cont__title__answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.cont__title__create .cont__title__answer .title__create{
+ font-size: 1.5rem;
+}
+
 
 .input__title__create{
     height: 4rem !important;
@@ -117,13 +146,92 @@ form{
     height: 3rem;
 }
 
+.btn__dialog {
+    margin: 0rem !important;
+    width: 100%;
+    padding: 0rem 4rem;
+}
+
 .btn__header__main{
     border: 0px;
     background-color: #fff;
+    --bs-btn-hover-bg: #b2b2b2;
+    --bs-btn-hover-color: #ffffff;
 }
 
 .cont_right_header{
     display: flex;
     row-gap: 1rem;
     margin-right: 2rem;
+}
+
+.dialog-title{
+    margin-bottom: 4rem;
+}
+
+.cont__for__questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont__for__questions .form__question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    width: 80%;
+}
+
+.cont__for__questions .form__question .fist_line{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.cont__for__questions .form__question .fist_line .element__radio__for__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.cont__for__questions .form__question .fist_line .element__radio__for__form .cont__radio{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: flex-start;
+}
+
+.form__question .cont__for__answers{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form__question .block__answers{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.form__question .input__name__question {
+    height: 8rem;
+}
+
+.form__question .block__one__answer .input__title__create {
+    display: flex;
+    width: 50% !important;
+}
+
+.btn__minus, .btn__plus{
+    display: flex;
+}
+
+.form__question img{
+    max-width: 40px;
+}
+
+.form__question .for__answer__plus__btn{
+    display: flex;
+    align-items: center;
 }
